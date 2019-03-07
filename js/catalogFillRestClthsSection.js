@@ -110,11 +110,12 @@ function renderProduct(props) {
 }
 
 let catalog = document.getElementById("catalog");
-var n = catalog.getAttribute("data-countImg");counter = 0;
-while(counter < n) {
-    let prod = renderProduct(products[counter]);
+var n = catalog.getAttribute("data-countImg");
+var count = 0;
+while(count < 8) {
+    let prod = renderProduct(products[count]);
     catalog.appendChild(prod);
-    counter++;
+    count++;
 }
 
 let infSection = document.createElement("div");
@@ -131,7 +132,7 @@ var w = window,
     g = d.getElementsByTagName('body')[0],
     x = w.innerWidth || e.clientWidth || g.clientWidth,
     y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-alert(x + ' × ' + y);
+// alert(x + ' × ' + y);
 
 
 
@@ -146,7 +147,17 @@ if(x >= 1024) {
     catalog.insertBefore(infSection, catalog.children[4])
 }
 
-
+let btnShow = document.getElementById("Catalog-BtnShowMore");
+console.log(btnShow);
+btnShow.addEventListener("click", () => {
+    while(count < n) {
+        let prod = renderProduct(products[count]);
+        catalog.appendChild(prod);
+        count++;
+    }
+    btnShow.style.display = "none";
+});
+document.getElementById("catalog");
 
 
 // 
