@@ -7,7 +7,7 @@ var products = [
         id: 0,
         name: "Boyfriend T-Shirt with Bohemian Print",
         cost: 34.25,
-        img: "../img/products/Boyfriend.png"
+        img: "../img/products/ClourBlock.png"
     },
     {
         id: 1,

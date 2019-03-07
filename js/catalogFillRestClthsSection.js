@@ -3,7 +3,7 @@ var products = [
         id: 0,
         name: "Boyfriend T-Shirt with Bohemian Print",
         cost: 34.25,
-        img: "../img/products/Boyfriend.png"
+        img: "../img/products/ClourBlock.png"
     },
     {
         id: 1,
@@ -45,7 +45,7 @@ var products = [
         id: 7,
         name: "Paul & Joe Sister Jumper with Neon Trims",
         cost: 19.75,
-        img: "../img/products/LevisBuyersChoice.png"
+        img: "../img/products/Paul.png"
     },
     {
         id: 8,
@@ -69,7 +69,7 @@ var products = [
         id: 11,
         name: "Boyfriend T-Shirt with Bohemian Print",
         cost: 34.25,
-        img: "../img/products/Boyfriend.png"
+        img: "../img/products/BoyTShirtBohemianPrint.png"
     },
     {
         id: 12,
