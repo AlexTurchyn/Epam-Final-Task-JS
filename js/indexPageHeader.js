@@ -1,4 +1,3 @@
-
 let burger = document.querySelectorAll(".MobileNavigation-Burger");
 burger[0].onclick = () => {
     let nav = document.querySelectorAll(".MobileNavigation-Navigation");

@@ -2,7 +2,7 @@
 // importScripts("./products");
 // import {products}  from "./products";   
 // console.log(products[0]);
-let products = [
+var products = [
     {
         id: 0,
         name: "Boyfriend T-Shirt with Bohemian Print",
@@ -64,7 +64,7 @@ let products = [
         img: "../img/pruducts/NeckKnittedJumperTable.png"
     },
     {
-        id: 9,
+        id: 10,
         name: "levi's Jeans for women",
         cost: 76.25,
         img: "../img/pruducts/LevisBuyersChoice.png"
@@ -79,7 +79,7 @@ function renderProduct(props) {
     product.innerHTML = `
         <div id="ProductCell-Img">
             <img src=${props.img} alt="" class="HomepagePhoto">
-            <div class="ProductCell-ImgWrapper"><a href="#" class="_a">View Item</a></div>
+            <div class="ProductCell-ImgWrapper"><a href="../item.html" class="_a">View Item</a></div>
         </div>
         <div class="ProductCell-Def">
             <p class="ProductCell-Name">${props.name}</p>
@@ -88,7 +88,7 @@ function renderProduct(props) {
     `
     return product;
 }
-
+console.log("Hi");
 let newArrivlas = document.getElementById("newArrivals");
 let n = newArrivlas.getAttribute("data-countImg");
 let counter = 0;

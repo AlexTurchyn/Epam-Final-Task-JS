@@ -6,7 +6,7 @@
     margin: 0px 20px;
 }
 #ProductCell-Img {
-    display: flex;
+    /* display: flex; */
     align-items: stretch;
 }
 .ProductCell-Def {
@@ -51,9 +51,6 @@ letter-spacing: 0.42px;
     color: red;
     /* background: rgba(0, 0, 0, 0.24); */
 }
-
-
-
 @media (max-width:768px) {
     .ProductCell {
         max-width: 35%;

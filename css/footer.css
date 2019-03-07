@@ -1,8 +1,5 @@
 /*Footer -----------------------------------------------------------------------------------*/
-@font-face {
-    font-family: "times-new-roman-ps-italic";
-    src: url(../fonts/times-new-roman-ps-italic.otf);
-}
+
 .Footer {
     position: -webkit-sticky;
     position: sticky;

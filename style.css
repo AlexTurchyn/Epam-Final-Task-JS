@@ -6,7 +6,6 @@ body{
 }
 #_next {
     max-width: 1300px;
-    /* border: 1px solid red; */
     margin: 0 auto;
 }
 ._a {
@@ -16,6 +15,10 @@ body{
 body {
     margin: 0px;
     padding: 0px;
+}
+@font-face {
+    font-family: "times-new-roman-ps-italic";
+    src: url(../fonts/times-new-roman-ps-italic.otf);
 }
 @font-face{
     font-family:  'Open Sans';

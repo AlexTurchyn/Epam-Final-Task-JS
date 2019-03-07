@@ -1,0 +1,31 @@
+.Catalog-InformationOnPage {
+    position: relative;
+    margin: 5%;
+    text-align: center;
+    /* border: 1px solid red;/ */
+    width: 100%;
+    padding: 2vh 0;
+}
+.InformationOnPage-Upper {
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 24px;
+    line-height: 34px;
+
+    /* Text style for "Last weeke" */
+    letter-spacing: 0.72px;
+}
+.InformationOnPage-Lower {
+
+    color: #000000;
+    font-family: "times-new-roman-ps-italic";
+    font-size: 16px;
+/* font-weight: 400; */
+    line-height: 30px;
+}
+.Catalog-RestClths {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
