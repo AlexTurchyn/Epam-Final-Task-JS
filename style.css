@@ -1,6 +1,17 @@
 * {
     box-sizing: border-box;
 }
+body{
+    /* background-color: #757575 */
+}
+#_next {
+    max-width: 1300px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+._a {
+    text-decoration: none;
+}
 body {
     margin: 0px;
     padding: 0px;
@@ -13,319 +24,66 @@ body {
     font-family:  'Roboto';
     src: url(./fonts/Roboto/Roboto-Regular.ttf);
 }
-.Header {
-    padding: 0px;
-    margin: 0px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 100vw;
-    height: 70px;
-    z-index: 999;
-    background-color: #ffffff;
-}
-.HeaderContainer {
-    position: relative;
-    width: 100vw;
-    height: 100%;
+.HomepagePhoto-Wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content:flex-end;
-    align-items: center;
-    align-content: stretch;
-    padding: 0 15px;
-    border-bottom: 1px solid  #e5e5e5;
 }
-.HeaderContainer-Label {
-    position: absolute;
-    left: 20px;
-    width: 50vw;
-    height: 100%;
-        /* Style for "tl" */
-    color: #000000;
+.HomepagePhoto{
+    width: 100%;
+}
+.Homepage-SectionTitle {
+        /* Style for "New arrivals" */
+    text-align: center;
+    font-size: 2.1rem;
+    margin: 3rem;
     font-family: "Open Sans";
-    font-size: 24px;
-    line-height: 65px;
-    text-transform: uppercase;
-    /* Text style for "tl" */
-    letter-spacing: 0.72px;
-    /* flex-grow: 6; */
-
 }
-.HeaderContainer-Bag {
-    /* Style for "Bag (0)" */
-    float: right;
-    padding-left: 20px;
-    position: relative;
-    text-align: right;
-}
-.HeaderContainer-Bag > span {
-    font-family: "Roboto";
-    color: #000000;
-    font-family: Roboto;
-    font-size: 12px;
-    line-height: 65px;
-    /* Text style for "Bag (0)" */
-    letter-spacing: 0.36px;
-    padding: 0 .5rem;
-}
-.HeaderContainer-Bag > img {
-    position: relative;
-    right: .5rem;
-}
-.MobileNavigation-Burger{
-    
-    /* flex-grow: 1; */
-    height: 100%;
-    display: block;
-    padding: 0 25px;
-    padding-top:25px;
-    border-left: 2px solid #f7f7f7;
-    background-image: url(./img/ico_menu.jpg);
-    background-repeat: no-repeat;
-    background-position: center center; 
-}
-/* .MobileNavigation-Burger img {
-    margin-left: auto;
-    margin-right: auto;
-} */
-
-.MobileNavigation-Navigation {
-    display: block;
-    height: 100vh;
-    overflow: auto;
-    background: #ffffff;
-    /* flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start; */
-}
-.MobileNavigation-Navigation_display_none{
-    display: none;
-}
-.MobileNavigation-Checkbox {
-    display: none;
-    position: absolute;
-}
-
-.MobileNavigation-Checkbox:checked + .MobileNavigation-Burger{
-    background-image: url(./img/ico_close.jpg);
-    border: none;
-    background-repeat: no-repeat;
-    background-position: center center; 
-}
-
-.MobileNavigation-List {
-    padding: 0px;
-    margin-top: 0px;
-    list-style: none;
-}
-/* .NavigationItem-Item {
-
-} */
-.NavigationItem-Item a {
+._linkBtn {
     display: block;
     text-decoration: none;
-    color: black;
-    font-size: 24px;
-    font-family: "Open Sans";
-    padding: 10px 20px;
-}
-.NavigationItem-Item a:hover {
-    color: red;
-}
-.NavigationItem-Item a:active {
-    background-color: #e5e5e5;
-}
-
-.NavigationList-Form {
-    margin-top: 70px;
-    margin-left: 20px;
-    width: 167px;
-    border-bottom: 2px solid  #e5e5e5; 
-}
-
-.Form-SearchText {
-    width: 137px;
-    color: black;
-    font-family: "Open Sans";
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.Form-SearchText::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
-.Form-SearchText::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
-.Form-SearchText:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
-.Form-SearchText:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
-.Form-SearchText:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
-.Form-SearchText:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
-.Form-SearchText:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
-.Form-SearchText:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
-
-.Form-SearchText::-webkit-input-placeholder {
-    /* Style for "Style Name" */
-    color: #a8a8a8;
-    font-family: "Open Sans";
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 65px;
-    /* Text style for "Style Name" */
-    letter-spacing: 0.36px;}
-
-
-.Form-SearchText, .Form-SearchButton{
-    outline: none;
-    border: none;
-    background: transparent;
-}
-
-.Form-SearchButton:before {
-    content: url(./img/ico.jpg);
-    /* font-family: FontAwesome; */
-    font-size: 16px;
-    color: #F9F0DA;
-  }
-.Form-SearchButton:focus {
-    border-color: #311c24
-}
-
-
-
-
-/*Footer -----------------------------------------------------------------------------------*/
-.Footer {
-    position: -webkit-sticky;
-    position: sticky;
+    
+    margin: 10vh auto;
+    padding: 0 7vw ;
     
 
-}
-.Footer-Step1 {
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
-}
-.Footer-Step2{
-    display: flex;
-    flex-flow: column wrap;
-}
-
-.Footer-List{
-    padding-bottom: 40px;
-}
-.Footer-List a{
-        text-decoration: none;
-        color: black;
-        font-family: "Roboto";
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 30px;
-        letter-spacing: 0.36px;
-}
-.QuickLinks {
-    flex-basis: 50%;
-    padding: 0 20px;
-}
-.CustomerCare {
-    flex-basis: 50%;
-    padding: 0 20px;
-}
-.QuestionsAndOrder {
+    width: max-content;
     
-    flex-basis: 100%;
-    border-top: 1px solid #e5e5e5;
-    display: flex;
-    /* justify-content: space-around; */
-}
-.QuestionsAndOrder-Question{
-    font-family: Roboto;
-    font-size: 12px;
-    padding: 0 20px;
-    flex-basis: 50%;
-    border-right: 1px solid #e5e5e5;
-}
-.QuestionsAndOrder-Question a{
-    font-weight: 700;
-    text-decoration: none;
-    font-style: normal;
-    color: #000000;
-}
-.QuestionsAndOrder-Order{
-
-    font-family: Roboto;
-    font-size: 12px;
-    padding: 0 20px;
-}
-.Footer-TitleBigIndent {
-    color: #000000;
-    font-family: "Open Sans";
-    font-size: 14px;
-    line-height: 35px;
-    letter-spacing: 0.42px;
-}
-.Step2-Notes {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px 20px;
-}
-.Step2-Share{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
     border: 1px solid #e5e5e5;
-    padding:  0px 20px;
-
-    color: #000000;
-    font-family: Roboto;
-    font-size: 10px;
-    font-weight: 700;
-    /* line-height: 65px; */
-    /* Text style for "Legal noti" */
-    letter-spacing: 0.3px;
 }
-.Footer-NoticeList{
+._linkBtn > p{
+    color: black;
+    margin: 1.5rem 3rem;
+    line-height: 1.25;
+    font-family: "Open Sans";
+}
+
+.Homepage-SectionNewArrivals {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.HomepagePhoto-PhotoCapture_position{
+    position: absolute;
+    top: 30px;
+    right: 40px;
     margin: 0px;
 }
-.Footer-NoticeList li{
-display: inline-block;
-color: #000000;
-font-family: Roboto;
-font-size: 10px;
-font-weight: 700;
-padding-right: 10px; 
-/* line-height: 65px; */
-/* Text style for "Legal noti" */
-letter-spacing: 0.3px;
+.HomepagePhoto-PhotoCapture_head {
+    font-family: "Open Sans";
+    /* font-size: 7vw; */
+    text-align: center;
 }
-.Footer-NoticeList a{
-    text-decoration: none;
-    color: #000000;
-}
-.FbAndTwi {
-position: absolute;
-right: 10px;
-}
-.Share-Legend {
-position: absolute;
-left: 20px;
-margin: 0px;
-}
-.Share-Number {
-margin-left: 10px;
-width: 40px;
-height: 19px;
-
-background-color: #f4f4f4;
-color: #000000;
-font-family: Roboto;
-padding: 4px 6px; 
-font-size: 10px;
-font-weight: 400;
+.HomepagePhoto-PhotoCapture_small {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 4vw;
+    /* max-font-size */
+    color: #757575;
 }
 
-
-
+@media (min-width: 1024px) {
+    .Homepage-SectionNewArrivals {
+        justify-content: space-around;
+    
+    }
+}

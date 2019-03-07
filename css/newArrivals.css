@@ -1,0 +1,21 @@
+.w375 { display: none;}
+.w768 {display: none; }
+.w1024 {display: none;}
+.ProductCell{
+    margin: 0px 20px;
+}
+@media (max-width:768px) {
+    .ProductCell {
+        max-width: 35vw;
+    }
+    .w375 { display: block;}/* .w768 {display: block; } */
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .w768 { display: block;}
+    .w375 { display: block;}/* .w768 {display: block; } */
+}
+@media (min-width: 1024px){
+    .w1024 { display: block;}
+    .w768 { display: block;}
+    .w375 { display: block;}/* .w768 {display: block; } */
+}

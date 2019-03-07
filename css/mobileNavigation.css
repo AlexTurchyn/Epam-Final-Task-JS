@@ -1,0 +1,177 @@
+.MobileNavigation-Burger{
+    
+    /* flex-grow: 1; */
+    height: 100%;
+    display: block;
+    padding: 0 25px;
+    padding-top:25px;
+    border-left: 2px solid #f7f7f7;
+    background-image: url(../img/ico_menu.jpg);
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+/* .MobileNavigation-Burger img {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.MobileNavigation-Navigation {
+    overflow: auto;
+    background: #ffffff;
+}
+.MobileNavigation-Navigation_display_none{
+    display: none;
+}
+
+
+
+
+.MobileNavigation-Checkbox {
+    display: none;
+    position: absolute;
+}
+
+.MobileNavigation-Checkbox:checked + .MobileNavigation-Burger{
+    background-image: url(../img/ico_close.jpg);
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+.MobileNavigation-List {
+    padding: 0px;
+    margin-top: 0px;
+    list-style: none;
+}
+/* .NavigationItem-Item {
+
+} */
+.NavigationItem-Item a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-family: "Open Sans";
+    padding: 10px 20px;
+}
+.NavigationItem-Item a:hover {
+    color: red;
+}
+.NavigationItem-Item a:active {
+    background-color: #e5e5e5;
+}
+.NavigationList-Form {
+    border-bottom: 2px solid  #e5e5e5; 
+    width: 167px;
+}
+
+.Form-SearchText {
+    width: 137px;
+    color: black;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 700;
+    /* border-bottom: 2px solid  #e5e5e5;  */
+}
+
+.Form-SearchText::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.Form-SearchText::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.Form-SearchText:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.Form-SearchText:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.Form-SearchText:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.Form-SearchText:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.Form-SearchText:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.Form-SearchText:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.Form-SearchText::-webkit-input-placeholder {
+    /* Style for "Style Name" */
+    color: #a8a8a8;
+    font-family: "Open Sans";
+    font-size: 12px;
+    /* font-weight: 700; */
+    /* line-height: 65px; */
+    /* Text style for "Style Name" */
+    letter-spacing: 0.36px;}
+
+
+.Form-SearchText, .Form-SearchButton{
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.Form-SearchButton:before {
+    content: url(../img/ico.jpg);
+    /* font-family: FontAwesome; */
+    font-size: 16px;
+    color: #F9F0DA;
+  }
+.Form-SearchButton:focus {
+    border-color: #311c24
+}
+
+@media (max-width: 767px) {
+    .MobileNavigation-Navigation {
+        height: 100vh;
+    }
+    
+    .NavigationList-Form {
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+    
+
+}
+@media (min-width: 768px)  {
+    
+    .MobileNavigation-Burger{
+        display: none;
+    }
+    .MobileNavigation-Navigation_display_none {
+        display: flex;
+    }
+    .MobileNavigation-Navigation {
+        position: relative;
+        overflow: auto;
+        background: #ffffff;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: center;
+        padding: 0 15px;
+        border-bottom: 1px solid  #e5e5e5; 
+
+
+    }
+    .MobileNavigation-List{
+        display: flex;
+        justify-content: space-around;
+        flex-grow: 8;
+        margin: 0;
+        padding-inline-start: 0px;
+    }
+    .NavigationItem-Item {
+        /* display: inline-block;/ */
+    }
+    .NavigationItem-Item a {
+        width: max-content;
+        font-size: 12px;
+        padding: 10px 2%;
+        margin: 0 2%;
+
+    }
+
+    
+
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .NavigationList-Form {
+        flex-grow: 2;
+        width: 0;
+        display: flex;
+        justify-content: center;
+        border-bottom: none;
+    }
+    .Form-SearchText {
+        display: none;
+    }
+}

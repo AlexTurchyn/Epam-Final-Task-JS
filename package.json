@@ -3,12 +3,20 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "entry point": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "babel js --watch --out-dir lib --presets=@babel/env "
   },
   "author": "Aleksey Turchin",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
     "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4"
   }
 }

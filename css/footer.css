@@ -1,0 +1,322 @@
+/*Footer -----------------------------------------------------------------------------------*/
+@font-face {
+    font-family: "times-new-roman-ps-italic";
+    src: url(../fonts/times-new-roman-ps-italic.otf);
+}
+.Footer {
+    position: -webkit-sticky;
+    position: sticky;
+    
+
+}
+.Footer-Step1 {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.Footer-Step2{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.Footer-List{
+    padding-bottom: 40px;
+}
+.Footer-List a{
+        text-decoration: none;
+        color: black;
+        font-family: "Roboto";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.36px;
+}
+.FooterNavigation-List {
+    padding: 0px;
+    margin-top: 0px;
+    list-style: none;
+}
+.QuickLinks {
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+.CustomerCare {
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+.QuestionsAndOrder {
+    
+    flex-basis: 100%;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    /* justify-content: space-around; */
+}
+.QuestionsAndOrder-Question{
+    font-family: Roboto;
+    font-size: 12px;
+    padding: 0 20px;
+    flex-basis: 50%;
+    border-right: 1px solid #e5e5e5;
+}
+.QuestionsAndOrder-Question a{
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    color: #000000;
+}
+.QuestionsAndOrder-Order{
+
+    font-family: Roboto;
+    font-size: 12px;
+    padding: 0 20px;
+}
+.QuestionsAndOrder-DeliverySpeech {
+    display: none;
+    font-family: "times-new-roman-ps-italic";
+    color: #757575;
+    line-height: 25px;
+    padding-left: 0;
+}
+.Footer-TitleBigIndent {
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 35px;
+    letter-spacing: 0.42px;
+}
+.Step2-Notes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 20px;
+}
+.Step2-Share{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    padding:  0px 20px;
+
+    color: #000000;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 700;
+    /* line-height: 65px; */
+    /* Text style for "Legal noti" */
+    letter-spacing: 0.3px;
+}
+.Footer-NoticeList{
+    margin: 0px;
+}
+.Footer-NoticeList li{
+display: inline-block;
+color: #000000;
+font-family: Roboto;
+font-size: 10px;
+font-weight: 700;
+padding-right: 10px; 
+/* line-height: 65px; */
+/* Text style for "Legal noti" */
+letter-spacing: 0.3px;
+}
+.Footer-NoticeList a{
+    text-decoration: none;
+    color: #000000;
+}
+.Step1-FbAndTwi {
+    display: none;
+}
+.Step2-FbAndTwi {
+display: block;
+position: absolute;
+right: 10px;
+}
+.Share-Legend {
+position: absolute;
+left: 20px;
+margin: 0px;
+}
+.Share-Number {
+margin-left: 10px;
+width: 40px;
+height: 19px;
+
+background-color: #f4f4f4;
+color: #000000;
+font-family: Roboto;
+padding: 4px 6px; 
+font-size: 10px;
+font-weight: 400;
+}
+
+@media (max-width:768px) {
+    .QuestionsAndOrder-Order{
+        padding-bottom: 8%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    /*Step 1------------------------------*/
+    .Footer-Step1 {
+        padding: 0 5%;
+        padding-bottom: 10%;
+        
+    }
+    .QuickLinks {
+        flex-basis: 33%;
+    }
+    .CustomerCare {
+        flex-basis: 33%;
+    }
+    .QuestionsAndOrder {
+        border: none;
+        flex-basis: 33%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+    .QuestionsAndOrder-Question{
+        flex-basis: 0%;
+        padding: 0;
+        border-right: none;        
+    }
+    .QuestionsAndOrder-Order{
+        padding: 0;
+        margin-top: 2%;
+    }
+    .Footer-List a{
+        font-size: 14px;
+        line-height: 40px;
+}
+    .Step1-FbAndTwi {
+        margin-top: 20%;
+        /* margin-bottom: 35%; */
+        display: block;
+    }
+    .Step2-FbAndTwi {
+        display: none;
+    }
+
+    /*Step 2--------------------------------------------*/
+    .Footer-Step2{
+        flex-direction: row; justify-content: flex-start;
+    }
+    .Step2-Notes {
+        order: 2;
+        width: 40%;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .Step2-Share{
+        order: 1;
+        position: relative;
+        width:60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        border: none;
+        padding:  0px 20px;
+    
+        /* color: #000000;
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.3px; */
+    }
+    
+}
+@media (min-width: 1024px) {
+
+    /*Step 1------------------------------*/
+    .Footer-Step1 {
+        /* padding: 0 5%; */
+        padding-bottom: 10%;
+        
+    }
+    .QuickLinks {
+        /* justify-content: space-around; */
+        padding: 0px 5%;
+        flex-basis: 25%;
+        padding-top: 20px;
+    }
+    .CustomerCare {
+        padding: 0px 20px;
+        flex-basis: 25%;
+        padding-top: 20px;
+    }
+    .QuestionsAndOrder {
+        border: none;
+        border-left: 1px solid #e5e5e5;
+        flex-basis: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 20px 20px;
+    }
+    .QuestionsAndOrder-Question{
+        flex-basis: 50%; 
+        padding: 0; 
+        border-right: none;        
+    }
+    .QuestionsAndOrder-Order{
+        flex-basis: 50%; 
+        padding: 0;
+        }
+    .QuestionsAndOrder-DeliverySpeech {
+        flex-basis: 100%;
+        display: block;
+        margin-bottom: 0;
+    }
+    .Step1-FbAndTwi {
+        display: block;
+    }
+    .Step2-FbAndTwi {
+        display: none;
+    }
+
+            /*Step 2--------------------------------------------*/
+    .Footer-Step2{
+        flex-direction: row; justify-content: flex-start;
+    }
+    .Step2-Notes {
+        order: 2;
+        width: 44%;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 40px;
+    }
+    .Step2-Share{
+        order: 1;
+        position: relative;
+        width:56%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        border: none;
+        padding:  0px 20px;
+    
+        /* color: #000000;
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.3px; */
+    }
+
+    .Footer-List a{
+        font-size: 14px;
+        line-height: 40px;
+}
+}
