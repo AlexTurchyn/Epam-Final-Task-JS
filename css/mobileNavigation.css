@@ -53,6 +53,7 @@
     font-size: 24px;
     font-family: "Open Sans";
     padding: 10px 20px;
+    cursor: pointer;
 }
 .NavigationItem-Item a:hover {
     color: red;
@@ -154,10 +155,8 @@
     }
     .NavigationItem-Item a {
         width: max-content;
-        font-size: 12px;
         padding: 10px 2%;
         margin: 0 2%;
-
     }
 
     
@@ -173,5 +172,14 @@
     }
     .Form-SearchText {
         display: none;
+    }
+    .NavigationItem-Item a {
+        font-size: 12px;
+    }
+}
+@media (min-width: 1025px) {
+    .NavigationItem-Item a {
+        font-size: 14px;
+
     }
 }

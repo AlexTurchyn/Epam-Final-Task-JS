@@ -11,6 +11,7 @@ body{
 }
 ._a {
     text-decoration: none;
+    color: #000000;
 }
 body {
     margin: 0px;
@@ -49,6 +50,15 @@ body {
     
     border: 1px solid #e5e5e5;
 }
+._linkBtn:hover {
+    border-color: #f14a58;
+    
+}
+._linkBtn:hover > p{
+    color:  #f14a58;
+}
+
+
 ._linkBtn > p{
     color: black;
     margin: 1.5rem 3rem;

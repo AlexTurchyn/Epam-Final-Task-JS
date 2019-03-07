@@ -71,20 +71,19 @@ let products = [
     }
 ];
 
-
-
-// if(document.body.clientWidth>=768) n = 3;
-// console.log(document.body.clientWidth);
 function renderProduct(props) {
 
     let product = document.createElement("div");
     product.id = props.id;
     product.classList.add("ProductCell");
     product.innerHTML = `
-        <img src=${props.img} alt="" class="HomepagePhoto">
-        <div>
-            <p>${props.name}</p>
-            <p>${parseFloat(props.cost)}</p>
+        <div id="ProductCell-Img">
+            <img src=${props.img} alt="" class="HomepagePhoto">
+            <div class="ProductCell-ImgWrapper"><a href="#" class="_a">View Item</a></div>
+        </div>
+        <div class="ProductCell-Def">
+            <p class="ProductCell-Name">${props.name}</p>
+            <p style="text-align: center">&pound;${props.cost.toFixed(2)}</p>
         </div>
     `
     return product;
