@@ -1,41 +1,129 @@
 .Btn-BackToCatalog{
-    display:block;
-width: 100%;
-color: #000000;
-font-family: "Open Sans";
-font-size: 16px;
-line-height: 65px;
-letter-spacing: 0.48px;
-border-bottom: 1px solid #e5e5e5;
-padding-left: 5%;
-margin-top: 35px;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 65px;
+  letter-spacing: 0.48px;
+  padding-left: 5%;
+  margin: 0px;
 }
 
+.Btn-BackToCatalog:hover {
+  color:  #f14a58;
+}
+.ItemDetails-BackToCatalog {
+  margin-top: 0px;
+}
 .ItemDetails {
-    display: flex;
-
+  
+  margin: 5vh 2vw; 
+  display: flex;
+}
+.ItemDetails-Photos {
+  flex: 5.5;
+  
 }
 .ItemDetails-Photos img{
-    width: 100%;
+  width: 100%;
+}
+.ItemDetails-Def {
+  flex: 4.5;
+  padding: 0;
+  padding-left: 30px;
 }
 
-.ItemDetails-Def {
-    text-align: center;
-    padding: 30px;
+.ItemDetails-DefName{
+  /* Style for "Dark class" */
+  color: #000000;
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  /* Text style for "Dark class" */
+  letter-spacing: 0.78px;
+}
+.ItemDetails-DefPrice{
+  /* Style for "Dark class" */
+  color: #000000;
+  font-family: Roboto;
+  font-size: 25px;
+  /* font-weight: 400; */
+  line-height: 70px;
+  /* Text style for "Dark class" */
+  letter-spacing: 0.78px;
 }
 
 ._linkBtn {
-    margin: 5% auto;
+  margin: 5% auto;
 }
-@media (max-width: 768px) {
-    .ItemDetails { 
-        flex-direction: column; 
-    }
-    .ItemDetails-Photos{ 
-        padding: 30px;
-    
-    }
-    .Btn-BackToCatalog{
-        margin-top: 0px;
-    }
+.ItemDetails-LineLabel {
+  width: 13%;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+.ItemDetails-LineInput {
+  width: 86%;
+}
+
+.Spec {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.ItemDetails-Spec {
+  text-align: left;
+  }
+
+.ItemDetails-SpecBlock {
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  color: #000000;
+  font-family: "Open Sans";
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  /* padding: 10px 20px; */
+  margin: 10px;
+  font-size: 14px;
+  /* font-weight: 700; */
+  
+  text-transform: uppercase;
+  letter-spacing: 0.42px;
+}
+.ItemDetails-SpecBlock:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.ItemDetails-SpecBlock:active{
+  box-shadow: 0 0 7px rgba(0,0,0,0.1);
+}
+
+input[type="radio"]:checked+label { 
+  box-shadow: 0 0 7px rgba(0,0,0,0.9);
+}
+
+@media (max-width: 767px) {
+  .ItemDetails-Def {
+    text-align: center;
+  }
+
+}
+@media (max-width: 1023px) {
+  .ItemDetails { 
+    flex-direction: column; 
+  }
+  .ItemDetails-Def {
+    text-align: center;
+  }
+}
+@media (min-width: 767px) and  (max-width: 1023px)  {
+  .Spec {
+    text-align: center;
+  }
 }

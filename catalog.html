@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/mobileNavigation.css">
     <link rel="stylesheet" href="./css/newArrivals.css">
+    <link rel="stylesheet" href="./css/item.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/catalog.css">
+    <link rel="stylesheet" href="./css/advBoards.css">
+
     <title>Catalog Template</title>
 </head>
 <body>
@@ -18,7 +21,13 @@
                 <div class="HeaderContainer"> 
                     <div class="HeaderContainer-Label" role="banner"><a href="./index.html" id="templateName" class="_a">TL</a></div>
                     <div class="HeaderContainer-Email"><a href="" class=" _a">E-mail sign-up</a></div>            
-                    <div class="HeaderContainer-Bag"><img src="./img/ico_bag.jpg" alt="Bag"><span class="Bag-title"> Bag (0)</span></div>
+                    <div class="HeaderContainer-Bag">
+                      <a href="/shopping-bag.html" class="Bag-title _a">
+                        <img src="./img/ico_bag.jpg" alt="Bag">
+                        Bag ( <span id="BagCounter"></span> )
+                      </a>
+                    </div>
+                    <script src="/js/Bag/counterItems.js"></script>
                     <input type="checkbox" id="navBurger" class="MobileNavigation-Checkbox">
                     <label for="navBurger" class="MobileNavigation-Burger"></label>
                 </div>
@@ -61,15 +70,20 @@
                 </nav>
     
         </header>
-
-
         <div style="margin-top: 70px;"></div>
-        <div id="catalog" data-countImg="15" class="Catalog-RestClths">
-            
+
+
+        <div id="catalog" class="Catalog-RestClths">
         </div>
         
 
-        <div id="Catalog-BtnShowMore" class="_linkBtn"> <p>Show more</p> </div>
+        <div id="Catalog-BtnShowMore" class="_linkBtn"> 
+          <p>Show more</p> 
+        </div>
+
+        <div style="margin-top: 20vh" class="HomepagePhoto-Wrapper" id ="CatalogAndBagAdvBoard">
+        </div>
+        <script src="./dist/advOnCatalogAndBag.js"></script>
 
         <footer class="Footer">
             <div class="Footer-Step1">
@@ -138,7 +152,7 @@
             </div>
         </footer>
     </div>
-    <script src="./js/catalogFillRestClthsSection.js"></script>
+    <script src="./dist/catalogPictures.js"></script>
     <script src="./lib/indexPageHeader.js"></script>
     <script src="./lib/ProductCellHover.js"></script>
 </body>

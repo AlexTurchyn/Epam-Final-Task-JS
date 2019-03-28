@@ -1,0 +1,13 @@
+@media (max-width: 767px) {
+  #HomepageAdvBoard :nth-child(n+2) {
+    display: none;
+  }
+  #CatalogAndBagAdvBoard :nth-child(n+2) {
+    display: none;
+  }
+} 
+@media (max-width: 1023px) {
+  #CatalogAndBagAdvBoard :nth-child(3) {
+    display: none;
+  }
+} 

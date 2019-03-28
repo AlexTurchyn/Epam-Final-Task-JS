@@ -3,8 +3,10 @@
     margin: 0px;
     position: -webkit-sticky;
     position: sticky;
+    display: flex;
+    flex-direction: column;
     top: 0;
-    height: 70px;
+    /* height: 70px; */
     z-index: 999;
     background-color: #ffffff;
 }

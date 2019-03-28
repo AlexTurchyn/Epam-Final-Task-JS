@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/mobileNavigation.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/catalog.css">
+    <link rel="stylesheet" href="./css/item.css">
+    <link rel="stylesheet" href="./css/ItemDetails.css">
+    <link rel="stylesheet" href="./css/advBoards.css">
+    <link rel="stylesheet" href="./css/bag.css">
+    <title>Shopping Bag</title>
+</head>
+<body>
+    <div id="_next">
+      <header class="Header">
+              <div class="HeaderContainer"> 
+                  <div class="HeaderContainer-Label" role="banner"><a href="./index.html" id="templateName" class="_a">TL</a></div>
+                  <div class="HeaderContainer-Email"><a href="" class=" _a">E-mail sign-up</a></div>            
+                  <div class="HeaderContainer-Bag"><a href="/shopping-bag.html" class="Bag-title _a">
+                    <img src="./img/ico_bag.jpg" alt="Bag"> 
+                    Bag ( <span id="BagCounter"></span> )
+                    </a>
+                  </div>
+                  <script src="/js/Bag/counterItems.js"></script>
+                  <input type="checkbox" id="navBurger" class="MobileNavigation-Checkbox">
+                  <label for="navBurger" class="MobileNavigation-Burger"></label>
+              </div>
+              <!-- <nav  class="TabletNavigation-Navigation">
+                  <a href="">Women</a>
+                  <a href="">Men</a>
+              </nav> -->
+              <nav class="MobileNavigation-Navigation MobileNavigation-Navigation_display_none" role="navigation">
+                  <ul class="MobileNavigation-List">
+                      <li class="NavigationItem-Item">
+                          <a href="">Women</a>
+                      </li>
+                      <li class="NavigationItem-Item">
+                          <a href="">Men</a>
+                      </li>
+                      <li class="NavigationItem-Item">
+                          <a href="">Handbags</a>
+                      </li>    
+                      <li class="NavigationItem-Item">
+                          <a href="">Accessories</a>
+                      </li>
+                      <li class="NavigationItem-Item">
+                          <a href="">Sale</a>
+                      </li>
+                      <li class="NavigationItem-Item">
+                          <a href="">New Arrivals</a>
+                      </li>
+                      <li class="NavigationItem-Item">
+                          <a href="">Clearance</a>
+                      </li>
+                      <li class="NavigationItem-Item">
+                          <a href="">Store Locator</a>
+                      </li> 
+                  </ul>
+                  <form class="NavigationList-Form" >
+                      <input type="text" name="" class="Form-SearchText" placeholder="Style Name" id="">
+                      <button type="submit" class="Form-SearchButton" ></button>
+                  </form>
+                  
+              </nav>
+      </header>
+      
+      
+      <div class="ItemDetails-BackToCatalog" style="border-bottom: 1px solid #e5e5e5;">
+          <p class="Btn-BackToCatalog"> Shopping bag
+        </p>
+      </div>
+      
+      
+      <div id = "ShoppingBag-ItemsWrapper" class="ShoppingBag-ItemsWrapper">
+      </div>
+
+      <div style="background-color: #e5e5e5; border-top: 1px solid grey; margin-top: 15vh;">
+        <p class="ShoppingBag-AdvInformation">You've qualified for Free UK Next Day Delivery on your order. Dont forget to enter you code <span style="color: #f14a58">nextday</span> at checkout</p>
+      </div>
+      
+      <div class = "Bag-FooterBtns">
+        <div class= "FooterBtn" id="ShoppingBag-EmptyBag"> <p>Empty bag</p></div>
+        <div id="ShoppingBag-BtnBuynow"> <p>Buy now</p> </div>
+        <div class= "FooterBtn" id="ShoppingBag-TotalCost"> <p>Total cost</p></div>
+      </div>
+      <script src="/js/Bag/emptyBag.js"></script>
+      
+
+      <footer class="Footer">
+              <div class="Footer-Step1">
+                  <div class="QuickLinks">
+                      <h2 class="Footer-TitleBigIndent">Quick Links</h2>
+                      <ul class="FooterNavigation-List Footer-List">
+                          <li><a href="">Store Locator</a></li>
+                          <li><a href="">Gift Cards</a></li>
+                          <li><a href="">Size guide</a></li>
+                          <li><a href="">About us</a></li>
+                          <li><a href="">Support</a></li>
+                      </ul>
+                  </div>
+                  <div class="CustomerCare">
+                      <h2 class="Footer-TitleBigIndent">Customer Care</h2>
+                      <ul class="FooterNavigation-List Footer-List">
+                          <li><a href="">Customer Service</a></li>
+                          <li><a href="">Track my order</a></li>
+                          <li><a href="">Return policy</a></li>
+                          <li><a href="">Shipping & delivery</a></li>
+                          <li><a href="">Contact us</a></li>
+                          <li><a href="">Careers</a></li>
+                      </ul>
+                  </div>
+                  <div class="QuestionsAndOrder">
+                      <div class="QuestionsAndOrder-Question">
+                          <h2 class="Footer-TitleBigIndent">Questions</h2>
+                          <address>
+                                  <img src="./img/twi_ico.png" alt="twitter-bird"> Tweet us <a href="https://twitter.com/template">@template</a>
+                          </address>
+                      </div>
+                      <div class="QuestionsAndOrder-Order">
+                          <h2 class="Footer-TitleBigIndent">Order by phone</h2>
+                          <p>8-800-409-47-12</p>
+                      </div>
+                      <pre class="QuestionsAndOrder-DeliverySpeech">
+          We have our own delivery service which
+          operates in 23 major European cities. Delivery
+          time - 3-5 days.
+                      </pre>
+                      <div class="Step1-FbAndTwi">
+                          <a href="https://www.facebook.com/trouver.template.pro/"><img src="./img/fb.png" alt="fb"></a>
+                          <span>&emsp;</span>
+                          <a href="https://twitter.com/template"><img src="./img/twi.png" alt="twi-blue"></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="Footer-Step2">
+                  <div class="Step2-Notes">
+                      <ul class="MobileNavigation-List Footer-NoticeList">
+                          <li><a href="">Legal notice</a></li>
+                          <li><a href="">Privacy policy</a></li>
+                          <li><a href="">Site map</a></li>
+                      </ul>
+                      <div class="FbAndTwi Step2-FbAndTwi">
+                          <a href="https://www.facebook.com/trouver.template.pro/"><img src="./img/fb.png" alt="fb"></a>
+                          <span>&emsp;</span>
+                          <a href="https://twitter.com/template"><img src="./img/twi.png" alt="twi-blue"></a>
+                      </div>
+                  </div>
+                  <div class="Step2-Share">
+                      <p class="Share-Legend">&copy; 2010-2015, The template Group Inc.</p>
+                      <h2 class="Footer-TitleBigIndent">Share</h2>
+                      <p class="Share-Number">1 437</p>
+                  </div>
+              </div>
+      </footer>
+    </div>  
+    <script src="./lib/indexPageHeader.js"></script>
+    <script src="./dist/renderItemBag.js"></script>
+</body>
+</html>

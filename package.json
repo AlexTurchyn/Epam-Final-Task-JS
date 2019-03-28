@@ -2,11 +2,12 @@
   "name": "final_task",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
   "entry point": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "babel js --watch --out-dir lib --presets=@babel/env "
+    "watch": "babel js --watch --out-dir lib --presets=@babel/env ",
+    "build": "webpack"
   },
   "author": "Aleksey Turchin",
   "license": "ISC",
@@ -17,6 +18,8 @@
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4"
+    "@babel/preset-env": "^7.3.4",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
   }
 }

@@ -11,26 +11,30 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/mobileNavigation.css">
     <link rel="stylesheet" href="./css/newArrivals.css">
+    <link rel="stylesheet" href="./css/item.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/advBoards.css">
     
     <!-- <link rel="stylesheet" href="./css/slider.css"> -->
     <title>Template Main page</title>
 </head>
-<script src="./node_modules/@babel/polyfill/dist/polyfill.js"></script>
 <body>
     <div id="_next">
         <header class="Header">
             <div class="HeaderContainer"> 
                 <div class="HeaderContainer-Label" role="banner"><a href="./index.html" id="templateName" class="_a">TL</a></div>
                 <div class="HeaderContainer-Email"><a href="" class=" _a">E-mail sign-up</a></div>            
-                <div class="HeaderContainer-Bag"><img src="./img/ico_bag.jpg" alt="Bag"><span class="Bag-title"> Bag (0)</span></div>
+                <div class="HeaderContainer-Bag">
+                  <a href="/shopping-bag.html" class="Bag-title _a">
+                    <img src="./img/ico_bag.jpg" alt="Bag"> 
+                    Bag ( <span id="BagCounter"></span> )
+                    </a>
+                  </div>
+                  <script src="/js/Bag/counterItems.js"></script>
                 <input type="checkbox" id="navBurger" class="MobileNavigation-Checkbox">
                 <label for="navBurger" class="MobileNavigation-Burger"></label>
             </div>
-            <!-- <nav  class="TabletNavigation-Navigation">
-                <a href="">Women</a>
-                <a href="">Men</a>
-            </nav> -->
+
             <nav class="MobileNavigation-Navigation MobileNavigation-Navigation_display_none" role="navigation">
                 <ul class="MobileNavigation-List">
                     <li class="NavigationItem-Item">
@@ -119,22 +123,13 @@
 
         <div style="margin-top: 70px;"></div>
 
-        <div class="HomepagePhoto-Wrapper">
-            <div style="position: relative">
-                <p class="HomepagePhoto-PhotoCapture_position HomepagePhoto-PhotoCapture_head ">
-                    Nike Red
-                    <br>
-                    <span class="HomepagePhoto-PhotoCapture_small">New</span>
-                </p>
-                
-                <img src="./img/Nike Red.jpg" alt="Nike Red" class="HomepagePhoto">
-            </div>
+        <div class="HomepagePhoto-Wrapper" id="HomepageAdvBoard">
         </div>
-        <script src="./lib/HomepagePhoto-PhotoCapture.js"></script>
+        <script src="./dist/advOnHomepage.js"></script>
 
         <h1 class="Homepage-SectionTitle">New arrivals</h1>
 
-        <div id="newArrivals" data-countImg="3" class="Homepage-SectionNewArrivals">
+        <div id="newArrivals" class="Homepage-SectionNewArrivals">
         </div>
 
         <a href="./catalog.html" class="_linkBtn"> <p>All arrivals</p> </a>
@@ -206,10 +201,8 @@ time - 3-5 days.
             </div>
         </footer>
     </div>
-    <script type="module" src="./lib/products.js"></script>
-    <script src="./lib/HomepageNewArrivals.js"></script>
+    <script src="./dist/newArrivals.js"></script>
     <script src="./lib/indexPageHeader.js"></script>
-    <!-- <script async src="./lib/lockScreenOrientation.js"></script> -->
     <script src="./lib/ProductCellHover.js"></script>
     <script src="./lib/slider.js"></script>
 </body>

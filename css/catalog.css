@@ -7,21 +7,19 @@
     padding: 2vh 0;
 }
 .InformationOnPage-Upper {
-    color: #000000;
-    font-family: "Open Sans";
-    font-size: 24px;
-    line-height: 34px;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 34px;
 
-    /* Text style for "Last weeke" */
-    letter-spacing: 0.72px;
+  /* Text style for "Last weeke" */
+  letter-spacing: 0.72px;
 }
 .InformationOnPage-Lower {
-
-    color: #000000;
-    font-family: "times-new-roman-ps-italic";
-    font-size: 16px;
-/* font-weight: 400; */
-    line-height: 30px;
+  color: #000000;
+  font-family: "times-new-roman-ps-italic";
+  font-size: 16px;
+  line-height: 30px;
 }
 .Catalog-RestClths {
     display: flex;

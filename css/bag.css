@@ -1,0 +1,92 @@
+.Bag-FooterBtns {
+  padding: 5vh 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center;
+}
+
+#ShoppingBag-EmptyBag { 
+  font-family: Roboto;
+    font-size: 14px;
+    padding: 0 20px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+    align-self: center;
+}
+
+#ShoppingBag-EmptyBag:hover {
+  color: #f14a58;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#ShoppingBag-TotalCost {
+  /* border: 1px solid red; */
+  align-self: center;
+}
+
+#ShoppingBag-BtnBuynow {
+    display: block;
+    padding: 0 7vw;
+    width: max-content;
+    border: 1px solid black;
+
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+}
+#ShoppingBag-BtnBuynow:hover {
+  cursor: pointer;
+}
+
+.ShoppingBag-ItemsWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.ProductCell-Bag-Name {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+}
+
+.ProductCell-Bag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ProductCell-BagDef {
+  flex-grow: 1;
+  max-width: 150px;
+}
+.ShoppingBag-AdvInformation {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 13px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0;
+  /* Text style for "Last weeke" */
+  letter-spacing: 0.72px;
+}
+
+.ProductCell-Bag:hover {
+  box-shadow: none; 
+}
+.ProductCell-Bag:hover .ProductCell-WrapperText {
+  display: block;
+}
